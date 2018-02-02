@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <title>Valdeir Cesconeto</title>
   <link rel="stylesheet" href="css/style-index.css">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -24,14 +25,22 @@
       <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
     </div></li>
 
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    <li><a class="scroll waves-effect" href="#home">Home</a></li>
+    <li><a class="scroll waves-effect" href="#home">Sobre</a></li>
+    <li><a class="scroll waves-effect" href="#home">Home</a></li>
+    <li><a class="scroll waves-effect" href="#home">Home</a></li>
   </ul>
-  
+
   <div class="height-page">
-    <button data-activates="slide-out" class="button-collapse btn waves-effect waves-light">
+    <button data-activates="slide-out" class="button-collapse wow jello btn" data-wow-duration="1.2s" data-wow-delay="2s" data-wow-iteration="2">
       <i class="material-icons right">dehaze</i>
       Informação
     </button>
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <h1 class="text-name"><span class="wow bounceInLeft">Valdeir </span> Cesconeto dos <span class="wow bounceInRight"> Santos</span></h1>
+      </div>
+    </div>
   </div>
 
 <div class="container">
@@ -56,14 +65,25 @@
         #Gradients are background-image
         While declaring the a solid color uses background-color property in CSS, gradients use background-image. This comes in useful in a few ways which we'll get into later. The shorthand background property will know what you mean if you declare one or the other.
 
+
+        <br>
+        <h1 id="home" class="wow bounceInUp">home</h1>
     </div>
   </div>
 </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js\button-information-sidenav.js"></script>
   <script type="text/javascript">
+
+    new WOW().init();
+
+    $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+    });
 
   </script>
 </body>
