@@ -16,11 +16,20 @@ body{
   align-items: center;
   justify-content: center;
 }
+.github{
+  padding: 0;
+}
+.sub-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 section {
   height: 100vh;
 }
 #home{
   background-color: #000;
+    background: linear-gradient(#667eea, #764ba2);
 }
 #conteudo{
   background-color: red;
@@ -30,9 +39,9 @@ section {
 @media screen and (max-width: 767px) {
   .text-name{
     font-family: 'Kanit', sans-serif;
-    margin-top: 200px;
+    margin-top: 400px;
     color: #fff;
-    font-size: 50px;
+    font-size: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +55,7 @@ section {
     font-family: 'Kanit', sans-serif;
     margin-top: 200px;
     color: #fff;
-    font-size: 50px;
+    font-size: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,9 +65,9 @@ section {
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .text-name{
     font-family: 'Kanit', sans-serif;
-    margin-top: 200px;
+    margin-top: 170px;
     color: #fff;
-    font-size: 45px;
+    font-size: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,5 +75,14 @@ section {
 }
 /* > Computer*/
 @media screen and (min-width: 1200px) {
-
+  .text-name{
+    font-family: 'Kanit', sans-serif;
+    margin-top: 170px;
+    color: #fff;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 }
