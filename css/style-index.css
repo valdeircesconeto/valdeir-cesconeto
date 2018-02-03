@@ -6,22 +6,65 @@ body{
   float: right;
   margin: 50px 50px 0 0;
 }
-.height-page{
-  background-color: #000;
-}
 
 .text-name{
   font-family: 'Kanit', sans-serif;
   margin-top: 200px;
   color: #fff;
-  font-size: 80px;
+  font-size: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bounceInLeft{
-  margin-right: 15px;
+section {
+  height: 100vh;
 }
-.bounceInRight{
-  margin-left: 15px;
+#home{
+  background-color: #000;
+}
+#conteudo{
+  background-color: red;
+}
+
+/*Small*/
+@media screen and (max-width: 767px) {
+  .text-name{
+    font-family: 'Kanit', sans-serif;
+    margin-top: 200px;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .text-name{
+    font-family: 'Kanit', sans-serif;
+    margin-top: 200px;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*Computer*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .text-name{
+    font-family: 'Kanit', sans-serif;
+    margin-top: 200px;
+    color: #fff;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* > Computer*/
+@media screen and (min-width: 1200px) {
+
 }
